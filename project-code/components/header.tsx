@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="z-[999] relative">
       <motion.div className="fixed top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 
-      shadow-lgshadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
+      shadow-lgshadow-black/[0.03] backdrop-blur-[3rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
       initial={{x: "-50%", y: -100, opacity: 0}}
       animate={{x: "-50%", y: 0, opacity: 1}}
       >
@@ -19,11 +19,14 @@ export default function Header() {
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[09.rem] font-medium text-gray-500 sm:flex-nowrap sm:gap-5">
         {
           links.map((val) => (
-            <li className="h-3/4 flex items-center justify-center" key={val.hash}>
+            <motion.li className="h-3/4 flex items-center justify-center" key={val.hash}
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1}}
+            >
               <Link className="flex w-full items-center justify-center px-2 py-2 hover:text-gray-950 transition" href={val.hash}>
               {val.name}
               </Link>
-            </li>
+            </motion.li>
           ))
         }
         </ul>
