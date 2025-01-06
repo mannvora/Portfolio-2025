@@ -4,6 +4,9 @@ import React from 'react'
 import Image from 'next/image'
 import photo from "@/public/photo2.jpeg"
 import { motion } from "framer-motion"
+import Link from 'next/link';
+import { BsArrowRight, BsGithub, BsLinkedin } from 'react-icons/bs';
+import { HiDownload } from 'react-icons/hi';
 
 export default function Intro() {
   return (
@@ -33,7 +36,15 @@ export default function Intro() {
                 </motion.span>
             </div>
         </div>
-        <p className='mb-10 mt-4 pt-8 translate-x-11 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'>
+        <motion.p className='text-center mt-10 mb-4 pt-8 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
+        initial={{opacity: 0, y: 100}}
+        animate={{opacity: 1, y: 0}}
+        transition={{
+            type: "spring",
+            stiffness: 125,
+            delay: 0.1,
+            duration: 0.7
+        }}>
             <span className='font-bold'>Hello, I am Mann Vora. </span>
             I'm a {" "}
             <span className='font-bold'>Full Stack Developer </span>
@@ -45,7 +56,22 @@ export default function Intro() {
             <span className='underline'>Backend </span>
             and {" "}
             <span className='underline'>DevOps.</span>
-        </p>
+        </motion.p>
+
+        <motion.div className='flex flex-col sm:flex-row items-center gap-4 pt-14 justify-center'
+        initial={{opacity: 0, y: 100}}
+        animate={{opacity: 1, y: 0}}
+        transition={{
+            type: "spring",
+            stiffness: 125,
+            delay: 0.1,
+            duration: 0.7
+        }}>
+            <Link href="#contact" className='bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full'>Contact me here <BsArrowRight/></Link>
+            <a className='bg-white px-7 py-3 flex items-center gap-2 rounded-full'> DOWNLOAD CV <HiDownload/></a>
+            <a className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full'><BsLinkedin/></a>
+            <a className='bg-white  p-4 text-gray-700 flex items-center gap-2 rounded-full'><BsGithub/></a>
+        </motion.div>
     </section>
   )
 }
