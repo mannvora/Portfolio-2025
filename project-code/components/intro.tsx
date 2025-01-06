@@ -36,7 +36,7 @@ export default function Intro() {
                 </motion.span>
             </div>
         </div>
-        <motion.p className='text-center mt-10 mb-4 pt-8 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
+        <motion.h1 className='text-center mt-10 mb-4 pt-8 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
         initial={{opacity: 0, y: 100}}
         animate={{opacity: 1, y: 0}}
         transition={{
@@ -56,9 +56,9 @@ export default function Intro() {
             <span className='underline'>Backend </span>
             and {" "}
             <span className='underline'>DevOps.</span>
-        </motion.p>
+        </motion.h1>
 
-        <motion.div className='flex flex-col sm:flex-row items-center gap-4 pt-14 justify-center'
+        <motion.div className='flex flex-col sm:flex-row items-center gap-4 px-4 pt-14 text-lg font-medium justify-center'
         initial={{opacity: 0, y: 100}}
         animate={{opacity: 1, y: 0}}
         transition={{
@@ -67,10 +67,22 @@ export default function Intro() {
             delay: 0.1,
             duration: 0.7
         }}>
-            <Link href="#contact" className='bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full'>Contact me here <BsArrowRight/></Link>
-            <a className='bg-white px-7 py-3 flex items-center gap-2 rounded-full'> DOWNLOAD CV <HiDownload/></a>
-            <a className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full'><BsLinkedin/></a>
-            <a className='bg-white  p-4 text-gray-700 flex items-center gap-2 rounded-full'><BsGithub/></a>
+            <Link href="#contact" className=' group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
+            focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'>Contact me here 
+                <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition'/>
+            </Link>
+            <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
+            focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/14' href='/CV.pdf' download> DOWNLOAD CV 
+                <HiDownload className='opacity-70 group-hover:translate-y-1 transition'/>
+            </a>
+            <a className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 
+            hover:text-gray-950 transition cursor-pointer border border-black/14' href='https://www.linkedin.com/in/mannvora/' target="_blank">
+                <BsLinkedin/>
+            </a>
+            <a className='bg-white  p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 
+            hover:text-gray-950 transition cursor-pointer border border-black/14' href='https://github.com/mannvora' target='_blank'>
+                <BsGithub/>
+            </a>
         </motion.div>
     </section>
   )
