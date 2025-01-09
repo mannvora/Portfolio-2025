@@ -8,7 +8,7 @@ type ProjectData = (typeof projectsData)[number];
 
 export default function Projects() {
     return (
-        <section className="px-4">
+        <section className="px-4 scroll-mt-28" id="projects">
             <SectionHeading>My Projects</SectionHeading>
             <div>
                 {projectsData.map((project, index) => (

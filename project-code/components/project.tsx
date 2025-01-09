@@ -42,7 +42,7 @@ export default function Project({
         <Link href={githubUrl} target="_blank" className="block group">
             <section
             className="bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden relative rounded-lg 
-            hover:bg-gray-200 transition cursor-pointer rounded-lg">
+            hover:bg-gray-200 transition cursor-pointer">
             {/* GitHub icon overlay */}
             <div className="absolute top-4 right-4 z-10 bg-white/80 p-2 rounded-full opacity-0 group-hover:opacity-100 transition">
                 <BsGithub className="w-6 h-6" />
