@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-vertical-timeline-component": "^3.3.6",
     "clsx": "^2.1.1",
     "framer-motion": "^11.15.0",
     "next": "^14.2.22",
     "react": "^18",
+    "react-chrono": "^2.6.1",
     "react-dom": "^18",
     "react-icons": "^5.4.0",
-    "react-intersection-observer": "^9.14.1"
+    "react-intersection-observer": "^9.14.1",
+    "react-vertical-timeline-component": "^3.5.3"
   },
   "devDependencies": {
     "@types/node": "^20",
