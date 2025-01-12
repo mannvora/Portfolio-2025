@@ -75,7 +75,7 @@ export const projectsData = [
     index: 1,
     title: "AWS Video FaceRec",
     description:
-      "The Video Face Recognition system uses FFmpeg for video processing and NLP ResNet for face detection, enabling easy face recognition from video inputs.",
+      "The Video Face Recognition system uses FFmpeg for video transcoding and NLP ResNet for face detection, enabling easy face recognition from video inputs.",
     tags: ["Python", "React.js", "AWS S3", "Tailwind", "AWS Lambda", "SQS"],
     imageUrl: faceRecImg,
     githubUrl: 'https://github.com/mannvora/VisionFace-Recognition-Service'
