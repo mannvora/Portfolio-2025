@@ -60,19 +60,20 @@ export default function Intro() {
                 delay: 0.1,
                 duration: 0.7
                 }}>
-                    <h1 className='mt-8 mb-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'>
-                        <span className='font-bold'>Hello, I am Mann Vora. </span>
-                        I'm a{" "}
-                        <span className='font-bold'>Full Stack Developer </span>
-                        with{" "}
-                        <span className='font-bold'>1 year </span>
-                        of experience. I enjoy building{" "}
-                        <span className='italic'>sites and applications. </span>
-                        My focus is{" "}
-                        <span className='underline'>Backend </span>
-                        and{" "}
-                        <span className='underline'>DevOps.</span>
-                    </h1>
+                <h1 className='mt-8 mb-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'>
+                    <span className='font-bold'>Hello, I am Mann Vora. </span>
+                    I&apos;m a{" "}
+                    <span className='font-bold'>Full Stack Developer </span>
+                    with{" "}
+                    <span className='font-bold'>1 year </span>
+                    of experience. I enjoy building{" "}
+                    <span className='italic'>sites and applications. </span>
+                    My focus is{" "}
+                    <span className='underline'>Backend </span>
+                    and{" "}
+                    <span className='underline'>DevOps.</span>
+                </h1>
+
             </motion.div>
 
             <motion.div
