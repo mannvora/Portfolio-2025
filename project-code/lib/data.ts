@@ -3,6 +3,9 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import faceRecImg from "@/public/video-face-rec.jpeg";
+import creditCardFraudImg from "@/public/credit-card-fraud-detection.png";
+import wanderlyImg from "@/public/wanderly-website.png";
+import docuQueryImg from "@/public/document-query-ai.png";
 
 
 export const links = [
@@ -34,58 +37,66 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "M.S. in Computer Science",
+    location: "Arizona State University, Tempe, AZ",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "Pursuing a Master's in Computer Science with a focus on distributed systems and machine learning. GPA: 3.94/4.",
+    icon: React.createElement(LuGraduationCap), // Graduation cap icon
+    date: "Jan 2024 - Dec 2025 (Expected)",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Software Developer",
+    location: "RaftLabs, Ahmedabad, India",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "At RaftLabs, I designed and implemented scalable, distributed systems for real-time data ingestion and API integrations. By optimizing caching strategies and rate-limiting, I enhanced system reliability under peak loads, while creating SQL-powered dashboards that enabled data-driven decisions across platforms.",
+    icon: React.createElement(CgWorkAlt), // Work icon
+    date: "Jan 2023 - Nov 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Software Developer Intern",
+    location: "TatvaSoft, Anand, India",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "At TatvaSoft, I architected scalable, serverless solutions leveraging AWS services like S3 and DynamoDB to support high-performance applications. I designed distributed systems with role-based access control and optimized APIs using GraphQL, enhancing efficiency and scalability for secure, real-time operations.",
+    icon: React.createElement(CgWorkAlt), // Work icon
+    date: "Jun 2022 - Jul 2022",
+  },
+  {
+    title: "B.E. in Computer Engineering",
+    location: "Gujarat Technological University, Gujarat, India",
+    description: "Graduated with an 8.79/10 GPA. Gained foundational knowledge in software development.",
+    icon: React.createElement(LuGraduationCap), // Graduation cap icon
+    date: "Jul 2019 - Jun 2023",
   },
 ] as const;
+
 
 export const projectsData = [
   {
     index: 1,
-    title: "CorpComment",
+    title: "AWS Video FaceRec",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "The Video Face Recognition system uses FFmpeg for video processing and NLP ResNet for face detection, enabling easy face recognition from video inputs.",
+    tags: ["Python", "React.js", "AWS S3", "Tailwind", "AWS Lambda", "SQS"],
     imageUrl: faceRecImg,
     githubUrl: 'https://github.com/mannvora/VisionFace-Recognition-Service'
   },
   {
     index: 2,
-    title: "rmtDev",
+    title: "DocuQuery AI",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "DocuQuery simplifies intelligent Q&A from documents. Upload PDFs, TXT files, or URLs, and get answers seamlessly based on the content.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: faceRecImg,
-    githubUrl: 'https://github.com/mannvora/VisionFace-Recognition-Service'
+    imageUrl: docuQueryImg,
+    githubUrl: 'https://github.com/mannvora/DocuQuery-AI'
   },
   {
     index: 3,
-    title: "Word Analytics",
+    title: "Credit Card Fraud Detection",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: faceRecImg,
-    githubUrl: 'https://github.com/mannvora/VisionFace-Recognition-Service'
+      "The Credit Card Fraud Detection system uses machine learning to analyze transactions and identify potential fraud in real-time.",
+    tags: ["PyTorch", "Numpy", "Pandas", "Matplotlib", "SKLearn"],
+    imageUrl: creditCardFraudImg,
+    githubUrl: 'https://github.com/mannvora/ML-Codes/blob/main/SML-575-Credit-Card-Fraud-Detection%20(1).ipynb'
   },
 ] as const;
 
@@ -105,8 +116,21 @@ export const skillsData = [
   "GraphQL",
   "Apollo",
   "Express",
-  "PostgreSQL",
+  "PostgreSQL", 
   "Python",
   "Django",
   "Framer Motion",
+  "C++",
+  "Java",
+  "SQL",
+  "Matplotlib",
+  "Pandas",
+  "Numpy",
+  "AWS DynamoDB",
+  "Docker",
+  "Kubernetes",
+  "Terraform",
+  "CloudFormation",
+  "Github",
+  "AWS CloudWatch"
 ] as const;

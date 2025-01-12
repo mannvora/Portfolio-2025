@@ -8,9 +8,11 @@ import Link from 'next/link';
 import { BsArrowRight, BsGithub, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
     const { ref } = useSectionInView({sectionName: 'Home'});
+    const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
     return (
         <section ref={ref} className='max-w-[50rem] mx-auto px-4 py-8 mb-28 scroll-mt-[100rem]' id="home">
@@ -85,6 +87,10 @@ export default function Intro() {
                 }}>
                 <Link
                 href="#contact"
+                onClick={() => {
+                    setActiveSection("Contact");
+                    setTimeOfLastClick(Date.now());
+                }}
                 className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
                 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'>
                 Contact me here

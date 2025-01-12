@@ -23,7 +23,7 @@ const VerticalElement = ({
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+        background: theme === "light" ? "#e2e8f0" : "rgba(255, 255, 255, 0.05)",
         boxShadow: "none",
         border: "1px solid rgba(0, 0, 0, 0.05)",
         textAlign: "left",
