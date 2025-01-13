@@ -6,6 +6,7 @@ import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 type VerticalElementType = {
   title: string;
+  location: string;
   description: string;
   date: string;
   icon: React.FunctionComponentElement<any>;
@@ -13,6 +14,7 @@ type VerticalElementType = {
 
 const VerticalElement = ({
   title,
+  location,
   description,
   date,
   icon,
@@ -44,7 +46,7 @@ const VerticalElement = ({
       visible={inView}
     >
       <h3 className="font-semibold capitalize" ref={ref}>
-        {title}
+        {title + location}
       </h3>
       <p className="!mt-2 !font-normal text-gray-700">
         {description}

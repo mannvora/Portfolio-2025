@@ -19,6 +19,7 @@ export default function Experience() {
                 <React.Fragment key={index}>
                 <VerticalElement
                     title={item.title}
+                    location={item.location}
                     description={item.description}
                     date={item.date}
                     icon={item.icon}

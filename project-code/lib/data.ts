@@ -38,7 +38,7 @@ export const links = [
 export const experiencesData = [
   {
     title: "M.S. in Computer Science",
-    location: "Arizona State University, Tempe, AZ",
+    location: " - ASU",
     description:
       "Pursuing a Master's in Computer Science with a focus on distributed systems and machine learning. GPA: 3.94/4.",
     icon: React.createElement(LuGraduationCap), // Graduation cap icon
@@ -46,7 +46,7 @@ export const experiencesData = [
   },
   {
     title: "Software Developer",
-    location: "RaftLabs, Ahmedabad, India",
+    location: " - RaftLabs",
     description:
       "At RaftLabs, I designed and implemented scalable, distributed systems for real-time data ingestion and API integrations. By optimizing caching strategies and rate-limiting, I enhanced system reliability under peak loads, while creating SQL-powered dashboards that enabled data-driven decisions across platforms.",
     icon: React.createElement(CgWorkAlt), // Work icon
@@ -54,7 +54,7 @@ export const experiencesData = [
   },
   {
     title: "Software Developer Intern",
-    location: "TatvaSoft, Anand, India",
+    location: " - TatvaSoft",
     description:
       "At TatvaSoft, I architected scalable, serverless solutions leveraging AWS services like S3 and DynamoDB to support high-performance applications. I designed distributed systems with role-based access control and optimized APIs using GraphQL, enhancing efficiency and scalability for secure, real-time operations.",
     icon: React.createElement(CgWorkAlt), // Work icon
@@ -62,7 +62,7 @@ export const experiencesData = [
   },
   {
     title: "B.E. in Computer Engineering",
-    location: "Gujarat Technological University, Gujarat, India",
+    location: " - GTU",
     description: "Graduated with an 8.79/10 GPA. Gained foundational knowledge in software development.",
     icon: React.createElement(LuGraduationCap), // Graduation cap icon
     date: "Jul 2019 - Jun 2023",
@@ -75,7 +75,7 @@ export const projectsData = [
     index: 1,
     title: "AWS Video FaceRec",
     description:
-      "The Video Face Recognition system uses FFmpeg for video transcoding and NLP ResNet for face detection, enabling easy face recognition from video inputs.",
+      "The Video Face Recognition system uses FFmpeg to extract frames and NLP ResNet for face detection, enabling easy face recognition from video inputs.",
     tags: ["Python", "React.js", "AWS S3", "Tailwind", "AWS Lambda", "SQS"],
     imageUrl: faceRecImg,
     githubUrl: 'https://github.com/mannvora/VisionFace-Recognition-Service'
