@@ -20,7 +20,7 @@ const VerticalElement = ({
   icon,
 }: VerticalElementType) => {
   const theme = "light";
-  const { ref, inView } = useInView({ threshold: 0.25, triggerOnce: true });
+  const { ref, inView } = useInView({ threshold: 0.25 });
 
   return (
     <VerticalTimelineElement
