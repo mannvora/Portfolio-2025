@@ -37,6 +37,14 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Software Developer Intern",
+    location: " - Amazon",
+    description:
+      "Developed a guided onboarding platform for Amazon’s internal businesses, cutting onboarding time from 8 weeks to 4 hours. Automated business profile setup with AWS Lambda and DynamoDB, eliminating 98% of manual effort, and built UI integration testing with Paystation APIs that enabled 3x faster validation and reduced misconfigurations.",
+    icon: React.createElement(CgWorkAlt), // Graduation cap icon
+    date: "May 2025 - August 2025",
+  },
+  {
     title: "M.S. in Computer Science",
     location: " - ASU",
     description:
